@@ -10,5 +10,5 @@
 #define COCOAPODS_POD_AVAILABLE_AMPActivityIndicator
 #define COCOAPODS_VERSION_MAJOR_AMPActivityIndicator 0
 #define COCOAPODS_VERSION_MINOR_AMPActivityIndicator 1
-#define COCOAPODS_VERSION_PATCH_AMPActivityIndicator 0
+#define COCOAPODS_VERSION_PATCH_AMPActivityIndicator 2
 

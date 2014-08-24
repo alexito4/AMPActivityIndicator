@@ -1,5 +1,5 @@
 PODS:
-  - AMPActivityIndicator (0.1.0)
+  - AMPActivityIndicator (0.1.2)
 
 DEPENDENCIES:
   - AMPActivityIndicator (from `../`)
@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  AMPActivityIndicator: fda09a96a4e53ebf40ce5c3801342b06fd70f89a
+  AMPActivityIndicator: 26e6d545ab8fd132f4e8e00d004721bd5a9b535c
 
 COCOAPODS: 0.33.1
