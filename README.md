@@ -7,6 +7,10 @@
 
 **AMPActivityIndicator is a custom UIView subclass that mimics the UIActivityIndicatorView behaviour.**
 
+![](https://raw.githubusercontent.com/alexito4/AMPActivityIndicator/master/example1.png)
+![](https://raw.githubusercontent.com/alexito4/AMPActivityIndicator/master/example2.png)
+![](https://raw.githubusercontent.com/alexito4/AMPActivityIndicator/master/example3.png)
+
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.

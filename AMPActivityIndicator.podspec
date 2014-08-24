@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
                        AMPActivityIndicator is a custom UIView subclass that mimics the UIActivityIndicatorView behaviour
                        DESC
   s.homepage         = "https://github.com/alexito4/AMPActivityIndicator"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.screenshots     = "https://raw.githubusercontent.com/alexito4/AMPActivityIndicator/master/example1.png", "https://raw.githubusercontent.com/alexito4/AMPActivityIndicator/master/example2.png", "https://raw.githubusercontent.com/alexito4/AMPActivityIndicator/master/example3.png"
   s.license          = 'MIT'
   s.author           = { "Alejandro Martinez" => "alexito4@gmail.com" }
   s.source           = { :git => "https://github.com/alexito4/AMPActivityIndicator.git", :tag => s.version.to_s }
