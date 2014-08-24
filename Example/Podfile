@@ -1,0 +1,10 @@
+target 'AMPActivityIndicator', :exclusive => true do
+  pod "AMPActivityIndicator", :path => "../"
+end
+
+target 'Tests', :exclusive => true do
+  pod "AMPActivityIndicator", :path => "../"
+
+  pod 'Specta', '~> 0.2.1'
+  pod 'Expecta'
+end
