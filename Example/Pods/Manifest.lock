@@ -1,0 +1,14 @@
+PODS:
+  - AMPActivityIndicator (0.1.0)
+
+DEPENDENCIES:
+  - AMPActivityIndicator (from `../`)
+
+EXTERNAL SOURCES:
+  AMPActivityIndicator:
+    :path: ../
+
+SPEC CHECKSUMS:
+  AMPActivityIndicator: fda09a96a4e53ebf40ce5c3801342b06fd70f89a
+
+COCOAPODS: 0.33.1

@@ -10,4 +10,9 @@
 
 @interface AMPViewController : UIViewController
 
+- (IBAction)changeColor:(id)sender;
+- (IBAction)changeWidth:(id)sender;
+- (IBAction)changeHeight:(id)sender;
+- (IBAction)changeAperture:(id)sender;
+
 @end

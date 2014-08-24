@@ -7,23 +7,41 @@
 //
 
 #import "AMPViewController.h"
+#import "AMPActivityIndicator.h"
+#import "UIColor+AMPAdditions.h"
 
 @interface AMPViewController ()
-
+@property (nonatomic, strong) IBOutlet AMPActivityIndicator *spinner;
 @end
 
 @implementation AMPViewController
 
-- (void)viewDidLoad
+- (IBAction)changeColor:(id)sender
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    [self.spinner setBarColor:[UIColor randomColor]];
 }
 
-- (void)didReceiveMemoryWarning
+- (IBAction)changeWidth:(id)sender
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    [self.spinner setBarWidth:[(UISlider *)sender value]];
+}
+
+- (IBAction)changeHeight:(id)sender
+{
+    [self.spinner setBarHeight:[(UISlider *)sender value]];
+}
+
+- (IBAction)changeAperture:(id)sender
+{
+    [self.spinner setAperture:[(UISlider *)sender value]];
+}
+
+- (IBAction)startAction:(id)sender {
+    [self.spinner startAnimating];
+}
+
+- (IBAction)stopAction:(id)sender {
+    [self.spinner stopAnimating];
 }
 
 @end
