@@ -19,4 +19,6 @@
 - (void)stopAnimating;
 - (BOOL)isAnimating;
 
+- (void)setProgress:(CGFloat)progress;
+
 @end

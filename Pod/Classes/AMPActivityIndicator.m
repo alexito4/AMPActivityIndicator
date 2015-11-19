@@ -94,6 +94,9 @@ static NSString * const AMPActivityIndicatorAnimationKey = @"AMPActivityIndicato
 
 - (void)startAnimating
 {
+    [self.marker setOpacity:0.0f];
+    [self.spinnerReplicator setInstanceCount:self.numberOfBars];
+    
     [self.fadeAnimation setDuration:AMPActivityIndicatorDefaultSpeed];
     CGFloat markerAnimationDuration = AMPActivityIndicatorDefaultSpeed / self.numberOfBars;
     [self.spinnerReplicator setInstanceDelay:markerAnimationDuration];
@@ -103,11 +106,18 @@ static NSString * const AMPActivityIndicatorAnimationKey = @"AMPActivityIndicato
 - (void)stopAnimating
 {
     [self.marker removeAnimationForKey:AMPActivityIndicatorAnimationKey];
+    [self.marker setOpacity:0.0f];
 }
 
 - (BOOL)isAnimating
 {
     return [self.marker animationForKey:AMPActivityIndicatorAnimationKey] != nil;
+}
+
+- (void)setProgress:(CGFloat)progress
+{
+    [self.marker setOpacity:1.0f];
+    [self.spinnerReplicator setInstanceCount:self.numberOfBars * progress];
 }
 
 #pragma mark - Getters
